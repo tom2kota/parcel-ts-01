@@ -3,13 +3,14 @@
  * Mappable interface has required fields to 'addMarker' that show different markers on a map
  */
 
-interface Mappable {
+export interface Mappable {
     location: {
         lat: number,
         lng: number
     }
 
     markerContent(): string
+    color: string
 }
 
 export class CustomMap {
